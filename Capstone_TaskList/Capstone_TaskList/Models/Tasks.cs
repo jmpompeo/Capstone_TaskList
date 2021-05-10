@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Capstone_TaskList.Data;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Capstone_TaskList.Models
         public string Description { get; set; }
         public DateTime DueDate { get; set; }
         public bool Complete { get; set; }
-        public IdentityUser User { get; set; }
+        public ApplicationUser User { get; set; }
 
 
     }
